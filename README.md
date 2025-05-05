@@ -2,6 +2,8 @@
 
 A sprite sheet tool to change padding / offsets
 
+Example from https://kenney.nl/assets/1-bit-pack
+
 ## Before
 
 ![before](doc/before.png)
