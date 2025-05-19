@@ -26,8 +26,8 @@ fn main() {
     let src_h = src.height();
     dbg!(src_w, src_h);
 
-    let columns = (src_w - 2 * src_offset) / (tile_size + src_padding);
-    let rows = (src_h - 2 * src_offset) / (tile_size + src_padding);
+    let columns = (src_w - src_offset * 2. + src_padding) / (tile_size + src_padding);
+    let rows = (src_h - src_offset * 2. + src_padding) / (tile_size + src_padding);
     dbg!(columns, rows);
 
     let dst_w = dst_offset * 2 + columns * tile_size + (columns - 1) * dst_padding;
